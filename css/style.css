@@ -74,7 +74,7 @@ nav ul > li:not(:last-child) > a{
 
 nav ul > li > a:hover{
     color: black;
-    background-color: beige;
+    background-color: var(--secondary-color);
 }
 
 .hero {
@@ -118,4 +118,38 @@ nav ul > li > a:hover{
   .hero button:hover {
     background-color:rgba(240, 173, 58, 0.929);
     color: black;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 200px;
+    position: å ;
+    bottom: 1px;;
+    width: 100%;
+  }
+
+  .grid-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 15rem;
+    grid-gap: 2rem;
+    grid-area: 
+    "a b"
+    "a c";
+  }
+
+  .grid-container > div:nth-child(1){
+    background-color: black;
+  }
+
+  .grid-container > div:nth-child(2){
+    background-color: rgb(234, 39, 74);
+  }
+
+  .grid-container > div:nth-child(3){
+    background-color: rgb(233, 18, 18);
   }
