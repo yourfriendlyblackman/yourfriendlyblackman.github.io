@@ -26,6 +26,9 @@ nav{
     padding: 5px 15px;
     position: relative;
 }
+.logo:hover{
+    background-color: var(--main-color);
+}
 
 .logo::before{
     content:"";
@@ -50,6 +53,20 @@ nav{
 .logo h2{
     font-style: italic;
     font-size: 12px;
+}
+
+.logo a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.logo:hover{
+    background-color: transparent;
 }
 
 nav ul{
@@ -107,8 +124,8 @@ nav ul > li > a:hover{
   .hero button {
     background-color: rgba(0, 0, 0, 0.861);
     color: var(--secondary-color);
-    padding: 1em 2em;
-    font-size: 1.5em;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -124,11 +141,17 @@ nav ul > li > a:hover{
     background-color: #333;
     color: #fff;
     text-align: center;
-    height: 200px;
-    position: å ;
-    bottom: 1px;;
-    width: 100%;
   }
+
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+  }
+
+  .icon{}
 
   .grid-container{
     display: flex;
@@ -140,6 +163,10 @@ nav ul > li > a:hover{
     grid-area: 
     "a b"
     "a c";
+  }
+
+  .icon i{
+    font-size: 20px;
   }
 
   .grid-container > div:nth-child(1){
