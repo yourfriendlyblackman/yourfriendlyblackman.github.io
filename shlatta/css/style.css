@@ -1,5 +1,5 @@
 :root{
-    --main-color: black; 
+    --main-color:#181818; 
     --secondary-color: gold;
     --text-color: gold;
     --navbar-height: 92px;
@@ -144,7 +144,8 @@ nav ul > li > a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 0,7rem;
+    background-color: #181818;
   }
   
   .card {
@@ -159,6 +160,7 @@ nav ul > li > a:hover{
     align-items: center;
     font-size: 13px;
     padding-top: 30px;
+    border: 1px solid rgba(255, 217, 0, 0.4) ;
   }
   .card:hover ul{
     display: block;
@@ -200,14 +202,13 @@ nav ul > li > a:hover{
   }
   
   .card-container:hover .card {
-    filter: blur(3px);
-    opacity: .5;
+
     transform: scale(.98);
     box-shadow: none;
   }
   
   .card-container:hover .card:hover {
-    transform: scale(1);
+    transform: scale(1.2);
     filter: blur(0px);
     opacity: 1;
     box-shadow: 0 8px 10px 0px rgba(0, 0, 0, 0.125);
@@ -216,7 +217,7 @@ nav ul > li > a:hover{
   }
 
   footer {
-    background-color: #333;
+    background-color:#181818;
     color: #fff;
     text-align: center;
   }
@@ -229,7 +230,9 @@ nav ul > li > a:hover{
 
   }
 
-  .icon{}
+  .icon{
+    
+  }
 
   .grid-container{
     display: flex;
