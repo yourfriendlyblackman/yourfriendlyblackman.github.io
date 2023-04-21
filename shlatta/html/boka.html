@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/boka.css">
         <link rel="stylesheet" href="../css/css-reset.css">
+        <script src="https://kit.fontawesome.com/7ddc9d567b.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,14 +16,17 @@
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#">Hem</a></li>
-                    <li><a href="#">Rum &amp; Sviter</a></li>
-                    <li><a href="#">Faciliteter</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li class="active"><a href="#">Boka nu</a></li>
+                <div class="logo ">
+                    <a href="../index.html"></a>
+                    <h1>SH</h1>
+                    <h2>Schlättahotellet</h2>
+                </div>
+                <ul role="list">
+                    <li><a href="#">Restaurang</a></li>
+                    <li><a href="#">Våra Paket</a></li>
+                    <li><a href="#">Att Göra</a></li>
                 </ul>
-            </nav>
+            </nav>   
             <h1>Schlattahotellet</h1>
             <h2>Boka nu för en oförglömlig vistelse!</h2>
         </header>
@@ -53,16 +57,35 @@
                 </select>
                 
                 <label for="num-guests">Antal gäster:</label>
-                <input type="number" id="num-guests" name="num-guests" required>
+                <select id="room-type" name="room-type" required>
+                    <option value="">Ange antal personer</option>
+                    <option value="person">1</option>
+                    <option value="person2">2</option>
+                    <option value="person3">3</option>
+                    <option value="person4">4</option>
+                    <option value="person5">5</option>
+                    <option value="person6">6</option>
+                    <option value="person7">7</option>
+                    <option value="person8">8</option>
+                    <option value="person9">9</option>
+                </select>
                 
                 <label for="special-requests">Speciella önskemål:</label>
                 <textarea id="special-requests" name="special-requests"></textarea>
                 
-                <input type="submit" value="Boka nu">
+                <a href="../index.html"><input type="submit" value="Boka nu"></a>
             </form>
         </main>
         <footer>
-            <p>&copy; 2023 Schlattahotellet. Alla rättigheter förbehållna.</p>
+            <div class="footer-container">
+                <div></div>
+                <div class="icon">
+                <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/watch?v=y98De45A94Y"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+           
+            <p>&copy; 2023 Schlättahotellet. All rights reserved.</p>
         </footer>
     </body>
 </html>
